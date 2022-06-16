@@ -1,0 +1,30 @@
+[
+  {
+    "accountType": 1,
+    "currency": "TRY",
+    "balance": "98.72",
+    "accountName": "Savings Account",
+    "id": "1"
+  },
+  {
+    "accountType": 1,
+    "currency": "SEK",
+    "balance": "499.15",
+    "accountName": "Money Market Account",
+    "id": "2"
+  },
+  {
+    "accountType": 1,
+    "currency": "NAD",
+    "balance": "350.82",
+    "accountName": "Savings Account",
+    "id": "3"
+  },
+  {
+    "accountType": 1,
+    "currency": "INR",
+    "balance": "530.28",
+    "accountName": "Savings Account",
+    "id": "4"
+  }
+]
