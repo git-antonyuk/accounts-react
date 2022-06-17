@@ -1,4 +1,4 @@
-import { IAccount } from './../types/index.d';
+import { IAccount } from "./../types/index.d";
 import { useState } from "react";
 
 interface IUseAccounts {
@@ -15,7 +15,7 @@ const useAccounts = ({ initialFileName, loadMoreFileName }: IUseAccounts) => {
 
   const addToList = (list: IAccount[]) => {
     setList((prev) => [...prev, ...list]);
-  }
+  };
 
   const fetch = async () => {
     setLoading(true);
@@ -30,11 +30,9 @@ const useAccounts = ({ initialFileName, loadMoreFileName }: IUseAccounts) => {
   };
 
   const loadMore = async () => {
-
     setLoading(true);
     try {
       const res = await import(`../assets/data/${loadMoreFileName}.json`);
-      console.log('%c 🍨 res: ', 'font-size:12px;background-color: #7F2B82;color:#fff;', res);
       addToList(res.default);
     } catch (error: any) {
       setError(error);
@@ -47,8 +45,8 @@ const useAccounts = ({ initialFileName, loadMoreFileName }: IUseAccounts) => {
     fetch,
     loadMore,
     list,
-    totalLength: LENGTH_OF_LIST
-  }
+    totalLength: LENGTH_OF_LIST,
+  };
 };
 
 export default useAccounts;

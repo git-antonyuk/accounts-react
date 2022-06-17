@@ -32,7 +32,6 @@ const AccountListItem = ({
   balance,
   accountName,
 }: IAccountListItem) => {
-  console.log("This is AccountListItem component");
   return (
     <div className={styles["account-list-item"]}>
       <div className={styles["account-list-item__header"]}>
