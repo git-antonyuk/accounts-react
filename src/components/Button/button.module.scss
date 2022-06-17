@@ -1,0 +1,27 @@
+.btn {
+  font-family: var(--font-primary);
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 14px;
+  padding: 9px 15px;
+  font-size: 12px;
+  background-color: transparent;
+
+  &--primary {
+    border: 1px solid var(--c-blue-900);
+    border-radius: 3em;
+    color: var(--c-blue-900);
+  }
+
+  &--danger {
+    background-color: var(--c-orange);
+    color: var(--c-white);
+    border-radius: 3em;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: var(--c-blue-900);
+  }
+}

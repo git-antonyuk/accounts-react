@@ -1,48 +1,44 @@
-import React from 'react';
-import './button.css';
+import { ReactNode } from 'react';
+import styles from './button.module.scss';
 
 interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
-  primary?: boolean;
+  buttonType?: 'primary' | 'danger' | 'secondary'
   /**
    * What background color to use
    */
   backgroundColor?: string;
   /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
    * Button contents
    */
-  label: string;
+  label?: string;
   /**
    * Optional click handler
    */
   onClick?: () => void;
+  /**
+   * React component
+   */
+  children?: ReactNode
 }
 
-/**
- * Primary UI component for user interaction
- */
 const Button = ({
-  primary = false,
-  size = 'medium',
+  buttonType = 'primary',
   backgroundColor,
   label,
+  children,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={[styles.btn, styles[`btn--${buttonType}`]].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      {label || children}
     </button>
   );
 };
