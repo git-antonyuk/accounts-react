@@ -1,0 +1,37 @@
+.account-list-item {
+  background: var(--c-white);
+  border-radius: 5px;
+  padding: 20px 22px;
+
+  &__header,
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+
+  &__balance {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 110%;
+    margin-left: 8px;
+  }
+
+  &__main {
+    margin-top: 9px;
+  }
+
+  &__status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--c-green);
+  }
+
+  &__accountName {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 8px;
+  }
+
+}

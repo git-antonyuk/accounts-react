@@ -1,5 +1,6 @@
 import styles from "./Layout.module.scss";
 import { ReactNode } from "react";
+import AccountHeader from "../Account/AccountHeader/AccountHeader";
 
 interface ILayoutProps {
   children: ReactNode | ReactNode[];
@@ -9,13 +10,8 @@ const Layout = ({ children }: ILayoutProps) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <header>
-          <p>header</p>
-        </header>
+        <AccountHeader />
         <main>{children}</main>
-        <footer>
-          <p>footer</p>
-        </footer>
       </div>
     </div>
   );

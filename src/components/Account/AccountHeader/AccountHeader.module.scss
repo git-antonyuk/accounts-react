@@ -1,0 +1,13 @@
+.account-header {
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+
+  &__title {
+    margin-right: 8px;
+  }
+
+  &__btn {
+    margin-left: 8px;
+  }
+}

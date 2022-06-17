@@ -1,0 +1,10 @@
+.load-more {
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin-right: 8px;
+  }
+}

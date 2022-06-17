@@ -1,28 +1,28 @@
 [
   {
     "accountType": 0,
-    "currency": "TRY",
+    "currency": "EUR",
     "balance": "98.72",
     "accountName": "Savings Account",
     "id": "1"
   },
   {
     "accountType": 0,
-    "currency": "SEK",
+    "currency": "ETH",
     "balance": "499.15",
     "accountName": "Money Market Account",
     "id": "2"
   },
   {
     "accountType": 0,
-    "currency": "NAD",
+    "currency": "BTC",
     "balance": "350.82",
     "accountName": "Savings Account",
     "id": "3"
   },
   {
     "accountType": 0,
-    "currency": "INR",
+    "currency": "GBP",
     "balance": "530.28",
     "accountName": "Savings Account",
     "id": "4"

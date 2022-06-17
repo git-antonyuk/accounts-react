@@ -1,0 +1,34 @@
+.account-list {
+  background: var(--c-grey-80);
+  border: 1px solid var(--c-grey-50);
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__header {
+    padding: 18px 16px 14px;
+    background: var(--c-white);
+  }
+
+  &__content {
+    padding: 16px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+    @media only screen and (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__footer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+  }
+}

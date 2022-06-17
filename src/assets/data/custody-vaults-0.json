@@ -1,29 +1,29 @@
 [
   {
     "accountType": 1,
-    "currency": "TRY",
-    "balance": "98.72",
+    "currency": "EUR",
+    "balance": "1500",
     "accountName": "Savings Account",
     "id": "1"
   },
   {
     "accountType": 1,
-    "currency": "SEK",
-    "balance": "499.15",
+    "currency": "EUR",
+    "balance": "200000",
     "accountName": "Money Market Account",
     "id": "2"
   },
   {
     "accountType": 1,
-    "currency": "NAD",
-    "balance": "350.82",
+    "currency": "EUR",
+    "balance": "999",
     "accountName": "Savings Account",
     "id": "3"
   },
   {
     "accountType": 1,
-    "currency": "INR",
-    "balance": "530.28",
+    "currency": "EUR",
+    "balance": "1.5",
     "accountName": "Savings Account",
     "id": "4"
   }

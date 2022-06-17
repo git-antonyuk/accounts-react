@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import styles from './button.module.scss';
+import styles from './Button.module.scss';
 
 interface ButtonProps {
   /**
@@ -21,7 +21,11 @@ interface ButtonProps {
   /**
    * React component
    */
-  children?: ReactNode
+  children?: ReactNode | ReactNode[],
+  /**
+   * Additional styles from parent component 
+   */
+  className?: string
 }
 
 const Button = ({
@@ -29,12 +33,13 @@ const Button = ({
   backgroundColor,
   label,
   children,
+  className,
   ...props
 }: ButtonProps) => {
   return (
     <button
       type="button"
-      className={[styles.btn, styles[`btn--${buttonType}`]].join(' ')}
+      className={[styles.btn, styles[`btn--${buttonType}`], className].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
