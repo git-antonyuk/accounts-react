@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "sh ./scripts/deploy.sh"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
