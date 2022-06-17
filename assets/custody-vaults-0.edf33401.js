@@ -1,0 +1,1 @@
+var c=[{accountType:1,currency:"EUR",balance:"1500",accountName:"Savings Account",id:"1"},{accountType:1,currency:"EUR",balance:"200000",accountName:"Money Market Account",id:"2"},{accountType:1,currency:"EUR",balance:"999",accountName:"Savings Account",id:"3"},{accountType:1,currency:"EUR",balance:"1.5",accountName:"Savings Account",id:"4"}];export{c as default};
